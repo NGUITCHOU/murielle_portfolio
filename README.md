@@ -5,7 +5,7 @@
 
   <br/>
 
-  <h1><b>Hello Codegisoft Academy</b></h1>
+  <h1><b>My first portfolio website</b></h1>
 
 </div>
 
@@ -66,8 +66,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 sh
-  cd weak 1/Hello_Codegisoft
-  git clone https://github.com/NGUITCHOU/Hello_Codegisoft.git
+  cd weak 1/murielle_portfolio
+  git clonehttps://github.com/NGUITCHOU/murielle_portfolio.git
 
 
 ### Install
@@ -104,7 +104,7 @@ sh
 ## 👥 Authors <a name="authors"></a>
 
 👤 Murielle Nguitcho
-- GitHub: [@Nguitchomurielle](https://github.com/ngalamac/Hello-Codegisoft Academy.git)
+- GitHub: [@Nguitchomurielle](https://github.com/NGUITCHOU/murielle_portfolio.git)
 
  FUTURE FEATURES 
 
