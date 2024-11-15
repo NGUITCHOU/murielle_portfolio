@@ -67,7 +67,7 @@ Clone this repository to your desired folder:
 
 sh
   cd weak 1/murielle_portfolio
-  git clonehttps://github.com/NGUITCHOU/murielle_portfolio.git
+  git clone https://github.com/NGUITCHOU/murielle_portfolio.git
 
 
 ### Install
