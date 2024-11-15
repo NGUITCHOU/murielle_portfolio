@@ -32,7 +32,7 @@
 
 This is the first technical Codegisoft Academy project it tests more on Git, GitHub, GitHub Workflow and Linters.
 
-*[Hello-Codegisoft Academy]* is a HTML CSS project
+*[My portfolio_website]* is a HTML CSS project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,7 +67,7 @@ Clone this repository to your desired folder:
 
 sh
   cd weak 1/murielle_portfolio
-  git clone https://github.com/NGUITCHOU/murielle_portfolio.git
+  git clone https://github.com/NGUITCHOU/murielle_portfolio Academy.git
 
 
 ### Install
@@ -113,7 +113,7 @@ sh
 - integration with javascript
 - Adding more html contents
 - implenenting fuctions
-- Add some css contentent
+- Add some css content
 
 ## 🤝 Contributing <a name="contributing"></a>
 
