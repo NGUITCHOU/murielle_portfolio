@@ -1,4 +1,4 @@
-# murielle_portfolio
+# Murielle_portfolio
 <a name="readme-top"></a>
 
 <div align="center">
@@ -103,7 +103,7 @@ sh
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Murielle Nguitcho
+👤 Murielle Nguitchou
 - GitHub: [@Nguitchomurielle](https://github.com/NGUITCHOU/murielle_portfolio.git)
 
  FUTURE FEATURES 
