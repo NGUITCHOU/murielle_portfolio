@@ -16,14 +16,14 @@
 
   .desktop_menu {
     display: none;
-  
   }
-  .desktop_menu.active{
+
+  .desktop_menu.active {
     display: flex;
     z-index: 1000;
-    position:absolute;
-  
+    position: absolute;
   }
+
   .desktop_menu ul {
     display: flex;
     flex-direction: column;
@@ -33,11 +33,11 @@
     gap: 20px;
     font-size: 25px;
   }
-  .desktop_menu ul li a{
-    color: #3A4A42;
+
+  .desktop_menu ul li a {
+    color: #3a4a42;
     text-decoration: none;
     font-weight: bold;
-
   }
 
   .mobile_menu {
@@ -60,15 +60,38 @@
     padding: 1.5px 10px;
     background-color: black;
   }
-  .mobile_menu.active p:nth-child(1){
- rotate: 45deg;
- top: 6px;
- position: relative;
+
+  .projects_title p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 1px;
   }
-  .mobile_menu.active p:nth-child(2){
+
+  .contact p {
+    text-align: center;
+    font-size: 38px;
+    padding: 10px 50px;
+    font-weight: bold;
+  }
+
+  .about_text p {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 3px;
+    width: 80%;
+  }
+
+  .mobile_menu.active p:nth-child(1) {
+    rotate: 45deg;
+    top: 6px;
+    position: relative;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
     opacity: 0;
   }
-  .mobile_menu.active p:nth-child(3){
+
+  .mobile_menu.active p:nth-child(3) {
     rotate: -45deg;
     top: -6px;
     position: relative;
@@ -156,12 +179,6 @@
     text-align: center;
   }
 
-  .projects_title p {
-    padding: 2px 30px;
-    background-color: #36b37e;
-    border-radius: 1px;
-  }
-
   .projects_cards {
     display: flex;
     flex-direction: column;
@@ -237,16 +254,9 @@
   }
 
   .about_text {
-    background: url()bottom left, url(./assets/image/illustration\ 1-\ about\ me-mobile.svg)top right;
+    background: url() bottom left, url(./assets/image/illustration\ 1-\ about\ me-mobile.svg) top right;
     background-repeat: no-repeat;
     background-size: auto;
-  }
-
-  .about_text p {
-    font-size: 25px;
-    text-align: center;
-    margin: 10px 3px;
-    width: 80%;
   }
 
   .about_cards {
@@ -294,13 +304,6 @@
     align-items: center;
     flex-direction: column;
     margin: 10px 0 30px 0;
-  }
-
-  .contact p {
-    text-align: center;
-    font-size: 38px;
-    padding: 10px 50px;
-    font-weight: bold;
   }
 
   form {
@@ -369,12 +372,13 @@
   .desktop_menu {
     display: none;
   }
-  .desktop_menu.active{
+
+  .desktop_menu.active {
     display: flex;
     z-index: 1000;
-    position:absolute;
-  
+    position: absolute;
   }
+
   .desktop_menu ul {
     display: flex;
     flex-direction: column;
@@ -384,14 +388,37 @@
     gap: 20px;
     font-size: 25px;
   }
-  .desktop_menu ul li a{
-    color: #3A4A42;
+
+  .desktop_menu ul li a {
+    color: #3a4a42;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
-
   }
 
+  footer p {
+    padding: 3px 15px;
+    background-color: black;
+    width: 100px;
+    border-radius: 3px;
+  }
+
+  .projects_title p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 1px;
+  }
+
+  .about_text p {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 3px;
+  }
+
+  .mobile_menu p {
+    padding: 1.5px 10px;
+    background-color: black;
+  }
 
   .mobile_menu {
     display: flex;
@@ -400,33 +427,24 @@
     align-items: end;
     margin: 10px 15px;
   }
-  .mobile_menu.active p:nth-child(1){
+
+  .mobile_menu.active p:nth-child(1) {
     rotate: 45deg;
     top: 6px;
     position: relative;
-     }
-     .mobile_menu.active p:nth-child(2){
-       opacity: 0;
-     }
-     .mobile_menu.active p:nth-child(3){
-       rotate: -45deg;
-       top: -6px;
-       position: relative;
-     }
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active p:nth-child(3) {
+    rotate: -45deg;
+    top: -6px;
+    position: relative;
+  }
 
   /* footer paragraph styling */
-  footer p {
-    padding: 3px 15px;
-    background-color: black;
-    width: 100px;
-    border-radius: 3px;
-  }
-
-  .mobile_menu p {
-    padding: 1.5px 10px;
-    background-color: black;
-  }
-
   .hero {
     background: url(./assets/images/header-illsutration-mobile.svg);
     background-repeat: no-repeat;
@@ -509,12 +527,6 @@
     text-align: center;
   }
 
-  .projects_title p {
-    padding: 2px 30px;
-    background-color: #36b37e;
-    border-radius: 1px;
-  }
-
   .projects_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -594,12 +606,6 @@
     background-size: auto;
   }
 
-  .about_text p {
-    font-size: 25px;
-    text-align: center;
-    margin: 10px 3px;
-  }
-
   .about_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -652,13 +658,6 @@
     align-items: center;
     flex-direction: column;
     margin: 10px 0 30px 0;
-  }
-
-  .contact p {
-    text-align: center;
-    font-size: 38px;
-    padding: 10px 50px;
-    font-weight: bold;
   }
 
   form {
