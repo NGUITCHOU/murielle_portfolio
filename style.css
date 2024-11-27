@@ -6,7 +6,7 @@
 }
 
 /* Describing the madia query for mobile screen */
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .logo a {
     font-size: 25px;
     text-decoration: none;
