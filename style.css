@@ -6,7 +6,7 @@
 }
 
 /* Describing the madia query for mobile screen */
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .logo a {
     font-size: 25px;
     text-decoration: none;
@@ -16,6 +16,28 @@
 
   .desktop_menu {
     display: none;
+  }
+
+  .desktop_menu.active {
+    display: flex;
+    z-index: 1000;
+    position: absolute;
+  }
+
+  .desktop_menu ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 375px;
+    gap: 20px;
+    font-size: 25px;
+  }
+
+  .desktop_menu ul li a {
+    color: #3a4a42;
+    text-decoration: none;
+    font-weight: bold;
   }
 
   .mobile_menu {
@@ -37,6 +59,42 @@
   .mobile_menu p {
     padding: 1.5px 10px;
     background-color: black;
+  }
+
+  .projects_title p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 1px;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 38px;
+    padding: 10px 50px;
+    font-weight: bold;
+  }
+
+  .about_text p {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 3px;
+    width: 80%;
+  }
+
+  .mobile_menu.active p:nth-child(1) {
+    rotate: 45deg;
+    top: 6px;
+    position: relative;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active p:nth-child(3) {
+    rotate: -45deg;
+    top: -6px;
+    position: relative;
   }
 
   .hero {
@@ -119,12 +177,6 @@
     font-weight: bold;
     margin: 3px 90px;
     text-align: center;
-  }
-
-  .projects_title p {
-    padding: 2px 30px;
-    background-color: #36b37e;
-    border-radius: 1px;
   }
 
   .projects_cards {
@@ -201,10 +253,10 @@
     font-weight: bold;
   }
 
-  .about_text p {
-    font-size: 25px;
-    text-align: center;
-    margin: 10px 3px;
+  .about_text {
+    background: url() bottom left, url(./assets/image/illustration\ 1-\ about\ me-mobile.svg) top right;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   .about_cards {
@@ -252,13 +304,6 @@
     align-items: center;
     flex-direction: column;
     margin: 10px 0 30px 0;
-  }
-
-  .contact p {
-    text-align: center;
-    font-size: 38px;
-    padding: 10px 50px;
-    font-weight: bold;
   }
 
   form {
@@ -328,6 +373,53 @@
     display: none;
   }
 
+  .desktop_menu.active {
+    display: flex;
+    z-index: 1000;
+    position: absolute;
+  }
+
+  .desktop_menu ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 769px;
+    gap: 20px;
+    font-size: 25px;
+  }
+
+  .desktop_menu ul li a {
+    color: #3a4a42;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  footer p {
+    padding: 3px 15px;
+    background-color: black;
+    width: 100px;
+    border-radius: 3px;
+  }
+
+  .projects_title p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 1px;
+  }
+
+  .about_text p {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 3px;
+  }
+
+  .mobile_menu p {
+    padding: 1.5px 10px;
+    background-color: black;
+  }
+
   .mobile_menu {
     display: flex;
     flex-direction: column;
@@ -336,19 +428,23 @@
     margin: 10px 15px;
   }
 
+  .mobile_menu.active p:nth-child(1) {
+    rotate: 45deg;
+    top: 6px;
+    position: relative;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active p:nth-child(3) {
+    rotate: -45deg;
+    top: -6px;
+    position: relative;
+  }
+
   /* footer paragraph styling */
-  footer p {
-    padding: 3px 15px;
-    background-color: black;
-    width: 100px;
-    border-radius: 3px;
-  }
-
-  .mobile_menu p {
-    padding: 1.5px 10px;
-    background-color: black;
-  }
-
   .hero {
     background: url(./assets/images/header-illsutration-mobile.svg);
     background-repeat: no-repeat;
@@ -429,12 +525,6 @@
     font-weight: bold;
     margin: 3px 90px;
     text-align: center;
-  }
-
-  .projects_title p {
-    padding: 2px 30px;
-    background-color: #36b37e;
-    border-radius: 1px;
   }
 
   .projects_cards {
@@ -516,12 +606,6 @@
     background-size: auto;
   }
 
-  .about_text p {
-    font-size: 25px;
-    text-align: center;
-    margin: 10px 3px;
-  }
-
   .about_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -574,13 +658,6 @@
     align-items: center;
     flex-direction: column;
     margin: 10px 0 30px 0;
-  }
-
-  .contact p {
-    text-align: center;
-    font-size: 38px;
-    padding: 10px 50px;
-    font-weight: bold;
   }
 
   form {
