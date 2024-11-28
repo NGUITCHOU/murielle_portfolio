@@ -1,4 +1,3 @@
-const { textContent } = require("domutils");
 
 const mobileMenu = document.getElementById('mobile_menu');
 
@@ -12,52 +11,52 @@ mobileMenu.addEventListener('click', () => {
 
 const projects = [
   {
-    image: '#',
+    image: './assets/image/Snapshoot Portfolio (2).svg',
     title: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     description: 'An interactive gallery that showcase my project',
-    githublink: '#',
-    liveserver: '#',
-  },
-  {
-    image: '#',
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
-    description: 'An interactive gallery that showcase my project',
-    githublink: '#',
-    liveserver: '#',
-  },
-  {
-    image: '#',
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
-    description: 'An interactive gallery that showcase my project',
-    githublink: '#',
-    liveserver:  '#',
-  },
-  {
-    image: '#',
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
-    description: 'An interactive gallery that showcase my project',
-    githublink: '#',
-    liveserver: '#',
+    githublink: 'https://github.com/codegisoft-academy-full-stack-students/codegisoft_linters',
+    liveserver: 'http://127.0.0.1:5501/index.html',
   },
   {
     image: './assets/image/Snapshoot Portfolio (2).svg',
     title: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     description: 'An interactive gallery that showcase my project',
-    githublink: '#',
-    liveserver: '#',
+    githublink: 'https://github.com/codegisoft-academy-full-stack-students/codegisoft_linters',
+    liveserver: 'http://127.0.0.1:5501/index.html',
   },
   {
     image: './assets/image/Snapshoot Portfolio (2).svg',
     title: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     description: 'An interactive gallery that showcase my project',
-    githublink: '#',
-    liveserver: '#',
+    githublink: 'https://github.com/codegisoft-academy-full-stack-students/codegisoft_linters',
+    liveserver:  'http://127.0.0.1:5501/index.html',
+  },
+  {
+    image: './assets/image/Snapshoot Portfolio (2).svg',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
+    description: 'An interactive gallery that showcase my project',
+    githublink: 'https://github.com/codegisoft-academy-full-stack-students/codegisoft_linters',
+    liveserver: 'http://127.0.0.1:5501/index.html',
+  },
+  {
+    image: './assets/image/Snapshoot Portfolio (2).svg',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
+    description: 'An interactive gallery that showcase my project',
+    githublink: 'https://github.com/codegisoft-academy-full-stack-students/codegisoft_linters',
+    liveserver: 'http://127.0.0.1:5501/index.html',
+  },
+  {
+    image: './assets/image/Snapshoot Portfolio (2).svg',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
+    description: 'An interactive gallery that showcase my project',
+    githublink: 'https://github.com/codegisoft-academy-full-stack-students/codegisoft_linters',
+    liveserver: 'http://127.0.0.1:5501/index.html',
     
   },
 ];
@@ -92,11 +91,7 @@ function openModal(projects){
   modal.classList.add("modal_style");
   modal.id = "projectModal";
 
-  const closeButton = document.createElement("span");
-  closeButton.classList.add("close_btn");
-  closeButton.innerHTML = "&times";
-  closeButton.addEventListener("click", closeModal);
-  modal_content.appendChild(closeButton);
+  
 
   const modal_content = document.createElement("div");
   modal_content.classList.add("modal_content");
@@ -142,6 +137,12 @@ function openModal(projects){
   liveserver.textContent = "Live Site"
   liveserver.classList.add("button");
   modal_links.appendChild(liveserver);
+  
+  const closeButton = document.createElement("span");
+  closeButton.classList.add("close_btn");
+  closeButton.innerHTML = "&times";
+  closeButton.addEventListener("click", closeModal);
+  modal_content.appendChild(closeButton);
 
   modal_content.appendChild(modal_links);
   modal.appendChild(modal_content);
