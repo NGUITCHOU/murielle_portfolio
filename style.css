@@ -359,7 +359,7 @@
     margin: 10px;
   }
 
-  .modal_style{
+  .modal_style {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -370,9 +370,9 @@
     display: flex;
     background-color: rgb(134, 129, 129);
     left: 0;
-
   }
-  .modal_content{
+
+  .modal_content {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -383,7 +383,7 @@
     box-shadow: 0 5px rgba(0, 0, 0, 0.3);
   }
 
-  .close_btn{
+  .close_btn {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -391,14 +391,14 @@
     cursor: pointer;
   }
 
-  .modal_image{
+  .modal_image {
     width: 100%;
     height: auto;
     border-radius: 4px;
     margin-bottom: 15px;
   }
 
-  #modalTechnologies{
+  #modalTechnologies {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -407,14 +407,14 @@
     padding: 0;
   }
 
-  #modalTechnologies li{
+  #modalTechnologies li {
     background-color: #d0d9d4;
     padding: 5px 10px;
     font-weight: bold;
   }
 
-  /*styling Github and live links in modal*/
-  .modal_links .button{
+  /* styling Github and live links in modal */
+  .modal_links .button {
     margin-top: 15px;
     padding: 10px 15px;
     background-color: #36b37e;
@@ -422,7 +422,6 @@
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    margin: 5px;
   }
 }
 
