@@ -60,34 +60,19 @@ const projects = [
   },
 ];
 
-function closeModal() {
-  const modal = document.getElementById('projectModal');
-  if (modal) {
-    modal.remove();
-    window.removeEventListener('click', outsideClick);
-  }
-}
-
-function insertCards() {
-  const projectsContainer = document.getElementById('projects_cards');
-  projects.forEach((project) => {
-    const projectCard = createProjectCard(project);
-    projectsContainer.appendChild(projectCard);
-  });
-}
-
-function outsideClick(event) {
-  const modal = document.getElementById('projectModal');
-  if (event.target === modal) {
-    closeModal();
-  }
-}
-
 // Function to close the modal
 function closeModal() {
   const modal = document.getElementById('projectModal');
   if (modal) {
     modal.remove();
+  }
+}
+
+// Function to handle clicks outside the modal
+function outsideClick(event) {
+  const modal = document.getElementById('projectModal');
+  if (event.target === modal) {
+    closeModal();
     window.removeEventListener('click', outsideClick);
   }
 }

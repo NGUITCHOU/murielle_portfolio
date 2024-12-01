@@ -41,6 +41,7 @@ This is the first technical Codegisoft Academy project it tests more on Git, Git
 - HTML
 - CSS
 - Linters
+- Javascript
 
 ### Key Features <a name="key-features"></a>
 
@@ -90,6 +91,7 @@ To run tests, run the following command:
 sh
   npx hint .
   npx stylelint "**/*.{css,scss}"
+  eslint.js .
 
 
 ### Deployment
@@ -104,7 +106,7 @@ sh
 ## 👥 Authors <a name="authors"></a>
 
 👤 Murielle Nguitchou
-- GitHub: [@Nguitchomurielle](https://github.com/NGUITCHOU/murielle_portfolio.git)
+- GitHub: [@NGUITCHOU](https://github.com/NGUITCHOU/murielle_portfolio.git)
 
  FUTURE FEATURES 
 
