@@ -29,7 +29,7 @@
     flex-direction: column;
     background-color: white;
     height: 100vh;
-    width: 375px;
+    width: 768px;
     gap: 20px;
     font-size: 25px;
   }
@@ -190,7 +190,6 @@
   .project_card {
     border: 1px solid #d0d9d4;
     width: 327px;
-    height: 474px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -222,7 +221,7 @@
 
   .project_card ul li {
     background-color: #d0d9d4;
-    padding: 2px 5px;
+    padding: 10px 6px;
     border-radius: 3px;
     font-weight: bold;
   }
@@ -233,7 +232,8 @@
     border: none;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-size: 15px;
   }
 
   .about,
@@ -245,7 +245,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 1px 0;
   }
 
   .about_text h2 {
@@ -277,7 +277,7 @@
   }
 
   .about_card h3 {
-    font-size: 27px;
+    font-size: 28px;
   }
 
   .about_card ul {
@@ -315,21 +315,15 @@
     margin: 10px;
   }
 
-  form input,
-  form textarea {
-    width: 327px;
-    margin: 5px 0;
-    border-radius: 8px;
-  }
-
   form input {
     padding: 10px 15px;
     border: 1px solid #d0d9d4;
   }
 
   form textarea {
-    padding: 35px 0;
+    padding: 10px 0;
     border: 1px solid #36b37e;
+    width: 60%;
   }
 
   form textarea::placeholder {
@@ -359,7 +353,7 @@
     margin: 10px;
   }
 
-  .modal_style{
+  .modal_style {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -370,35 +364,37 @@
     display: flex;
     background-color: rgb(134, 129, 129);
     left: 0;
-
+    font-size: 20px;
   }
-  .modal_content{
+
+  .modal_content {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    max-width: 90%;
+    border-radius: 5px;
+    max-width: 50%;
     text-align: center;
     width: 500px;
     position: relative;
     box-shadow: 0 5px rgba(0, 0, 0, 0.3);
   }
 
-  .close_btn{
+  .close_btn {
     position: absolute;
     top: 10px;
     right: 15px;
-    color: #333;
+    color: black;
     cursor: pointer;
+    font-size: 30px;
   }
 
-  .modal_image{
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 15px;
+  .modal_style img {
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 6px;
   }
 
-  #modalTechnologies{
+  #modalTechnologies {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -407,22 +403,22 @@
     padding: 0;
   }
 
-  #modalTechnologies li{
+  #modalTechnologies li {
     background-color: #d0d9d4;
     padding: 5px 10px;
     font-weight: bold;
   }
 
-  /*styling Github and live links in modal*/
-  .modal_links .button{
-    margin-top: 15px;
-    padding: 10px 15px;
+  /* styling Github and live links in modal */
+  .modal_links .button {
+    padding: 8px 15px;
     background-color: #36b37e;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    margin: 5px;
+    font-size: 20px;
+    margin: 10px;
   }
 }
 
@@ -433,6 +429,7 @@
     text-decoration: none;
     color: #36b37e;
     margin: 10px;
+    display: none;
   }
 
   .desktop_menu {
@@ -450,7 +447,7 @@
     flex-direction: column;
     background-color: white;
     height: 100vh;
-    width: 769px;
+    width: 1024px;
     gap: 20px;
     font-size: 25px;
   }
@@ -486,14 +483,6 @@
     background-color: black;
   }
 
-  .mobile_menu {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    align-items: end;
-    margin: 10px 15px;
-  }
-
   .mobile_menu.active p:nth-child(1) {
     rotate: 45deg;
     top: 6px;
@@ -508,6 +497,14 @@
     rotate: -45deg;
     top: -6px;
     position: relative;
+  }
+
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: end;
+    margin: 10px 15px;
   }
 
   /* footer paragraph styling */
@@ -604,7 +601,6 @@
   .project_card {
     border: 1px solid #d0d9d4;
     width: 327px;
-    height: 474px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -778,6 +774,74 @@
     flex-direction: column;
     margin: 10px;
   }
+
+  .modal_style {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(134, 129, 129);
+    left: 0;
+    font-size: 20px;
+  }
+
+  .modal_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    text-align: center;
+    width: 500px;
+    position: relative;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .modal_style img {
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 6px;
+  }
+
+  #modalTechnologies {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  #modalTechnologies li {
+    background-color: #d0d9d4;
+    padding: 5px 10px;
+    font-weight: bold;
+  }
+
+  /* styling Github and live links in modal */
+  .modal_links .button {
+    padding: 8px 15px;
+    background-color: #36b37e;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -789,28 +853,36 @@
     display: none;
   }
 
+  .desktop_menu {
+    display: none;
+  }
+
+  .desktop_menu.active {
+    display: flex;
+    z-index: 1000;
+    position: absolute;
+  }
+
   .desktop_menu ul li a {
-    color: rgb(25, 5, 43);
+    color: #3a4a42;
     display: flex;
     flex-direction: row;
     margin: 15px;
     font-size: 25px;
     text-decoration: none;
-    list-style: none;
-    padding: 50px;
+    padding: 5px;
   }
 
   .desktop_menu ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    list-style: none;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 1025px;
   }
 
   .mobile_menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 3px;
     align-items: end;
@@ -830,6 +902,45 @@
     background-color: black;
   }
 
+  .projects_title p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 1px;
+  }
+
+  .about_text p {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 3px;
+    width: 80%;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 38px;
+    padding: 10px 50px;
+    font-weight: bold;
+    width: 40%;
+    margin-top: -100px;
+    margin-left: 10%;
+  }
+
+  .mobile_menu.active p:nth-child(1) {
+    rotate: 45deg;
+    top: 6px;
+    position: relative;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active p:nth-child(3) {
+    rotate: -45deg;
+    top: -6px;
+    position: relative;
+  }
+
   .hero {
     background: url(./assets/images/Header-llustration-desktop.svg);
     background-repeat: no-repeat;
@@ -840,7 +951,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -10%;
   }
 
   h1 {
@@ -914,12 +1024,6 @@
     text-align: center;
   }
 
-  .projects_title p {
-    padding: 2px 30px;
-    background-color: #36b37e;
-    border-radius: 1px;
-  }
-
   .projects_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -931,7 +1035,6 @@
   .project_card {
     border: 1px solid #d0d9d4;
     width: 327px;
-    height: 474px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -999,19 +1102,6 @@
     background-size: auto;
   }
 
-  .about_text p {
-    padding: 30px 0;
-    font-size: 25px;
-    text-align: center;
-    margin: 10px 3px;
-    width: 60%;
-  }
-
-  .about_text button {
-    padding: 15px;
-    font-size: 15px;
-  }
-
   .about_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1066,16 +1156,6 @@
     margin: 50px 0 50px 0;
     margin-top: 10%;
     padding: 100px;
-  }
-
-  .contact p {
-    text-align: center;
-    font-size: 38px;
-    padding: 10px 50px;
-    font-weight: bold;
-    width: 40%;
-    margin-top: -100px;
-    margin-left: 10%;
   }
 
   form {
@@ -1136,6 +1216,74 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 10px;
+  }
+
+  .modal_style {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(134, 129, 129);
+    left: 0;
+    font-size: 20px;
+  }
+
+  .modal_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 50%;
+    text-align: center;
+    width: 500px;
+    position: relative;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .modal_style img {
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 6px;
+  }
+
+  #modalTechnologies {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  #modalTechnologies li {
+    background-color: #d0d9d4;
+    padding: 5px 10px;
+    font-weight: bold;
+  }
+
+  /* styling Github and live links in modal */
+  .modal_links .button {
+    padding: 8px 15px;
+    background-color: #36b37e;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
     margin: 10px;
   }
 }
